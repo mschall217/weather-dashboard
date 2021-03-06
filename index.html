@@ -6,13 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <!-- linking boot strap although I think the combo with the js and popper below would suffice  -->
     <link rel="stylesheet" href="style.css">
     <!-- linking my CSS -->
 </head>
 <body>
-    
+    <header class="bg-dark">
+        Weather Dashboard
+    </header>
+    <aside class="conatiner col-md-3">
+        <h2>Search for a City:</h2>
+        <div class="row">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Enter City Name" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div id="city-history" class="list-group"></div>
+        </div>
+    </aside>
+    <main class="col-md-9">
+        <card id="current" class="card">
+            <div class="row">
+                <h1 class="city-name"></h1>
+                <h1 class="todays-date"></h1>
+            </div>
+            <div class="row">
+                <h2 class="temperature">Temperature: </h2>
+            </div>
+            <div class="row">
+                <h2 class="humidity">Humidity: </h2>
+            </div>
+            <div class="row">
+                <h2 class="temperature">Temperature: </h2>
+            </div>
+            <div class="row">
+                <h2 class="wind-speed">Wind Speed: </h2>
+            </div>
+            <div class="row">
+                <h2 class="uv-index">UV Index: </h2>
+            </div>
+        </card>
 
+
+    </main>
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

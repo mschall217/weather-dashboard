@@ -1,0 +1,27 @@
+.bg-dark{
+    color: white;
+    text-align: center;
+    font-size:x-large;
+    padding: 20px;
+
+}
+
+.conatiner{
+    color: black;
+}
+h2{
+    font-size: large;
+    padding: 5px;
+}
+.form-inline{
+    color: black;
+    padding-bottom: 5px;
+}
+.list-group{
+    
+}
+.btn-outline-success{
+    color: black;
+    background-color: white;
+    border: black solid 1pxs;
+}
