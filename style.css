@@ -25,3 +25,7 @@ h2{
     background-color: white;
     border: black solid 1pxs;
 }
+.row{
+    padding: 5px;
+    margin: 5px
+}
