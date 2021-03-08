@@ -29,3 +29,11 @@ h2{
     padding: 5px;
     margin: 5px
 }
+
+.card-body{
+    padding: 5px;
+    margin: 5px;
+    background-color: blue;
+    color: white;
+
+}
