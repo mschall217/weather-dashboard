@@ -46,15 +46,25 @@ function logUserWord(event){
         var latt = response.coord.lat;
         var long = response.coord.lon;
 
-        var UVurl = "https://api.openweathermap.org/data/2.5/onecall?lat=" + latt + "&lon=" + long + "&exclude=hourly,currentd&appid=14bc8790460d5c199a2e1724c8bc204d";
+        var UVurl = "https://api.openweathermap.org/data/2.5/onecall?lat=" + latt + "&lon=" + long + "&exclude=hourly,current,minutelyd&appid=14bc8790460d5c199a2e1724c8bc204d";
         $.ajax({
             url: UVurl,
             method: "GET"
         }).then(function(response){
-            uvIndexDisplay.text(response.daily[0].uvi);
-            console.log(response);
-            console.log(response.daily[0].temp.day);
-            console.log(response.daily[0].humidity);
+            var index = response.daily[0].uvi
+            uvIndexDisplay.text(index);
+            var indexInt = parseInt(index)
+            console.log(indexInt)
+            if(indexInt < 2){
+                uvIndexDisplay.addClass("green");
+            } else if(indexInt > 3 || indexInt < 5){
+                uvIndexDisplay.addClass("yellow");
+            } else if(indexInt > 6 || indexInt < 7){
+                uvIndexDisplay.addClass("orange");
+            } else{
+                uvIndexDisplay.addClass("red");
+            }
+
             var dayOneDate = moment().add(1, 'days').format('L')
             console.log(dayOneDate);
             var dayOneDateEl =$(".day-one-date")
