@@ -6,6 +6,7 @@ Using data from the OpenWeather API a dashboard is presented to retrieve data fr
 - [Installation](#installation)
 - [See it here](#see it here) 
 - [Usage](#usage)
+- [Technologies](#Technologies)
 - [Support](#support)
 - [Contributing](#contributing)
 
@@ -22,6 +23,11 @@ View My Project at https://mschall217.github.io/weather-dashboard/
 
 This is a simple day planer that allows a user to input things they need to do and have them stay on the page while they work through it. The UI is also nice that it will grey out old hours, make the current one pink, and leave the future hours green so the user has those helpful visual ques adding a lot of dynamic to the page. 
 
+## Technologies
+  HTML 
+  CSS
+  JavaScript 
+  
 ## Support
 
 Please [open an issue](https://github.com/mschall217/work-day-scheduler/issues) for support.
